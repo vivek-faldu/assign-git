@@ -1,4 +1,36 @@
+
 • What is a gitignore file and what should it include for a Java project?
 • What does fast-forward in Git mean?
 • Why should you have different branches?
 • In a project how many remote Git repositories do you usually have?
+
+
+1) 
+
+Files mentioned in git ignore are not pushed on to repository. Some of the files can be 
+
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# Package Files #
+*.jar
+*.war
+*.zip
+*.tar.gz
+*.rar
+
+
+2) If we are trying to merge a commit 'a' to commit 'b' and  'a' is the ancestor of 'b' (which means b can be reached from a or content of a is already present in b), 
+git will fast forward the label of 'a' to point to 'b' instead of creating a new commit. This concept is called fast forwarding.
+
+3) Diffrent branches are helpful for working on different features of project. We can work on different features and finally merge everything to master to get the full application up and running.
+
+4) A project would usually have only 1 remote git repository. Each developers will have their own local copy of repo.
+
+
+
+
+
